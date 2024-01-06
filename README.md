@@ -16,6 +16,9 @@ Note that your MediaWiki installation must use MySQL, not SQLite.
 
 It automatically gets put on all pages
 
+Example of how it looks:
+![The Today's Page screen](image.png)
+
 # License
 
 This extension is licensed under the GNU General Public License v2.0. See the [LICENSE](LICENSE) file for more details.
