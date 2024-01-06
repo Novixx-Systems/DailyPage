@@ -48,6 +48,7 @@ class Hooks implements \MediaWiki\Hook\BeforePageDisplayHook {
 		if ( !file_exists( __DIR__ . '/data' ) ) {
 			mkdir( __DIR__ . '/data' );
 		}
+		$row->page_title = str_replace( '_', ' ', $row->page_title );
 		// Save the article for today
 		file_put_contents( __DIR__ . '/data/' . $dayOfYear . '.txt', $row->page_title );
 		// Show the article
