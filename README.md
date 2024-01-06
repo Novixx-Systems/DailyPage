@@ -17,6 +17,8 @@ Note that your MediaWiki installation must use MySQL, not SQLite.
 It automatically gets put on all pages
 
 Example of how it looks:
+
+
 ![The Today's Page screen](image.png)
 
 # License
