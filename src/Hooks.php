@@ -41,7 +41,7 @@ class Hooks implements \MediaWiki\Hook\BeforePageDisplayHook {
 		mt_srand( $dayOfYear );
 		// Get a random page on the wiki using SQL
 		$dbr = wfGetDB( DB_REPLICA );
-		$sql = 'SELECT page_title FROM page WHERE page_namespace = 0 ORDER BY rand(' . $dayOfYear . ') LIMIT 1';
+		$sql = 'SELECT page_title FROM page WHERE page_namespace = 0 ORDER BY rand() LIMIT 1';
 		$res = $dbr->query( $sql );
 		$row = $res->fetchObject();
 		// Create data directory if it doesn't exist
